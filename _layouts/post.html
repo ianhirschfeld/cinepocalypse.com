@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="post-content">
+  <header class="post-header is-max-content-width block-center">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-subtitle is-gray">{{ page.subtitle }}</div>
+    <time class="post-datetime is-light-gray" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format }}</time>
+  </header>
+  <div class="post-hero block-center">
+    <img class="post-image" src="{{ page.image }}" alt="{{ page.title }} Hero" />
+    {% if page.image_credit %}
+    <span class="post-image-credit is-light-gray">Image: {{ page.image_credit}}</span>
+    {% endif %}
+  </div>
+  <div class="post-body is-max-content-width block-center">
+    {{ content }}
+  </div>
+</article>

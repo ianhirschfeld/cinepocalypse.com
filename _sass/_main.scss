@@ -1,0 +1,425 @@
+$max-page-width: 1024px;
+$max-content-width: 600px;
+$logo-width: 300px;
+$logo-height: 235px;
+$image-width: 800px;
+$image-height: 480px;
+$headshot-size: 150px;
+$responsive-max-page-width: $max-page-width - 1;
+$grid-size: 20px;
+$grid-size-half: $grid-size / 2;
+$grid-size-double: $grid-size * 2;
+
+$font-family-freight: 'freight-sans-pro', Helvetica, sans-serif;
+$font-family-rift: 'rift-soft', Helvetica, sans-serif;
+$font-family: $font-family-freight;
+$font-family-headers: $font-family-rift;
+
+$black: #414141;
+$gray: #606060;
+$light-gray: #808080;
+$extra-light-gray: #c0c0c0;
+$background-color: #fff;
+$brand-color: #df4633;
+$text-color: $black;
+$link-color: $black;
+
+$transition-speed: 0.15s;
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: $background-color;
+  color: $text-color;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-headers;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $light-gray;
+    text-decoration: underline;
+  }
+}
+
+// ==================================================
+// FONTS & TEXT
+// ==================================================
+.text-center {
+  text-align: center;
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.is-gray {
+  color: $gray;
+}
+
+.is-light-gray {
+  color: $light-gray;
+}
+
+// ==================================================
+// HELPERS
+// ==================================================
+.block-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix {
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
+.is-max-width {
+  @extend .block-center;
+  width: 100%;
+  max-width: $max-page-width;
+}
+
+.is-max-content-width {
+  width: 100%;
+  @extend .block-center;
+  max-width: $max-content-width;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.underline-link {
+  a {
+    text-decoration: underline;
+  }
+}
+
+// ==================================================
+// PAGE ELEMENTS
+// ==================================================
+.page-content {
+  border-top: 3px solid $brand-color;
+  padding: ($grid-size * 3) 0;
+}
+
+.page-header {
+  margin-bottom: $grid-size * 4;
+}
+
+.page-body {}
+
+.page-footer {}
+
+.page-logo {
+  width: $logo-width;
+  height: $logo-height;
+
+  a {
+    width: $logo-width;
+    height: $logo-height;
+    display: block;
+    background: url('../images/CinepocalypseLogo.png') repeat 0 0;
+    background-size: $logo-width $logo-height;
+  }
+}
+
+.page-nav {
+  margin-top: $grid-size * 3;
+}
+
+.page-nav-list {
+  padding-left: $grid-size;
+  padding-right: $grid-size;
+  display: inline-block;
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+}
+
+.page-nav-item {
+  padding: $grid-size-half $grid-size-double;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.divider {
+  width: 60%;
+  margin: $grid-size-double auto;
+  padding: 0;
+  border: none;
+  border-top: 1px solid $extra-light-gray;
+}
+
+.about-footer {
+  margin-top: $grid-size-double;
+}
+
+.headshot {
+  width: $headshot-size;
+  height: $headshot-size;
+  margin-right: $grid-size;
+  background: url('../images/IanHirschfeld.jpg') no-repeat center center;
+  background-size: $headshot-size;
+  border-radius: $headshot-size;
+}
+
+.about-list {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.about-item {
+  margin: 0 0 5px 0 !important;
+  font-size: 1rem;
+
+  &:last-child {
+    margin: 0 !important;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+// ==================================================
+// POSTS
+// ==================================================
+.post-content {}
+
+.post-header {}
+
+.post-body {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    margin-top: $grid-size-double;
+    font-size: 2rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    margin-top: $grid-size-double;
+    color: $gray;
+    font-size: 1.333rem;
+  }
+
+  p {
+    margin-top: $grid-size;
+    line-height: 1.3;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  ul,
+  ol {
+    margin: $grid-size 0;
+    padding: 0 0 0 $grid-size;
+    line-height: 1.3;
+
+    li {
+      margin-top: $grid-size-half;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  blockquote {
+    margin: $grid-size-double 0 ;
+    padding: 0 $grid-size-double;
+    border-left: 2px solid $brand-color;
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+}
+
+.post-title {
+  font-size: 3rem;
+}
+
+.post-subtitle {
+  padding: $grid-size-half 0;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.post-datetime {}
+
+.post-hero {
+  width: $image-width;
+  margin-top: $grid-size;
+  margin-bottom: $grid-size-double;
+  font-size: 0;
+}
+
+.post-image-container {
+  margin-top: $grid-size * 1.5;
+  margin-bottom: $grid-size * 1.5;
+  font-size: 0;
+}
+
+.post-image {
+  width: 100%;
+}
+
+.post-image-credit {
+  margin-top: 5px;
+  display: block;
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: right;
+}
+
+.posts-list {
+  margin: 0 auto;
+  display: block;
+}
+
+.post-item {
+  width: 1 / 3 * 100%;
+  padding-bottom: 18%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post-item-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    .post-item-image {
+      width: 120%;
+      height: 120%;
+    }
+  }
+}
+
+.post-item-image {
+  width: 101%;
+  height: 101%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  transition: all $transition-speed;
+}
+
+.post-item-overlay {
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.post-item-meta {
+  padding: $grid-size-half $grid-size;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  text-align: left;
+}
+
+.post-item-title,
+.post-item-subtitle {
+  color: #fff;
+}
+
+.post-item-title {
+  font-size: 1.333rem;
+}
+
+.post-item-subtitle {
+  margin-top: 5px;
+  font-size: 0.888rem;
+  line-height: 1.3;
+}
+
+// ==================================================
+// RESPONSIVE
+// ==================================================
+@media only screen and (max-width: $responsive-max-page-width) {}

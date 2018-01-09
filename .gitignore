@@ -1,0 +1,8 @@
+.DS_Store
+/.bundle
+/build
+/.sass-cache
+_site
+.sass-cache
+.jekyll-metadata
+.asset-cache

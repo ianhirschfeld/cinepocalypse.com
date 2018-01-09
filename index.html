@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<ul class="posts-list list-reset text-center">
+  {% for post in site.posts %}
+  <li class="post-item">
+    <a class="post-item-link" href="{{ post.url | relative_url }}">
+      <div class="post-item-image" style="background-image: url('{{ post.image }}');"></div>
+      <div class="post-item-overlay"></div>
+      <div class="post-item-meta">
+        <h2 class="post-item-title">{{ post.title }}</h2>
+        <p class="post-item-subtitle">{{ post.subtitle }}</p>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

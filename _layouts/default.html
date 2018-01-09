@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="canonical" href="{{ page.url | replace: '.html', '' | absolute_url }}">
+  <meta property="og:url" content="{{ page.url | replace: '.html', '' | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}">
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta property="og:image" content="{{ page.image | default: site.open_graph_image | absolute_url }}">
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+  <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | absolute_url }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.png" | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="stylesheet" href="https://use.typekit.net/{{ site.typekit }}.css">
+  <link rel="stylesheet" href="{{ "/css/app.css" | relative_url }}">
+</head>
+<body>
+  <div class="page-content">
+    <header class="page-header">
+      <div class="page-logo text-overflow block-center"><a href="/">Cinepocalypse - Film reviews</a></div>
+      <nav class="page-nav text-center">
+        <ul class="page-nav-list list-reset">
+          <li class="page-nav-item"><a href="/about">About</a></li>
+          <!-- <li class="page-nav-item"><a href="#">Subscribe</a></li> -->
+          <li class="page-nav-item"><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-body underline-link">
+      {{ content }}
+    </main>
+    <footer class="page-footer">
+    </footer>
+  </div>
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
+</body>
+</html>
