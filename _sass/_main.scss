@@ -1,9 +1,8 @@
 $max-page-width: 1024px;
-$max-content-width: 600px;
+$max-content-width: 620px;
 $logo-width: 300px;
 $logo-height: 235px;
-$image-width: 800px;
-$image-height: 480px;
+$image-width: 820px;
 $headshot-size: 150px;
 $responsive-max-page-width: $max-page-width - 1;
 $grid-size: 20px;
@@ -132,9 +131,11 @@ a {
 }
 
 .is-max-content-width {
-  width: 100%;
   @extend .block-center;
+  width: 100%;
   max-width: $max-content-width;
+  padding-left: $grid-size-half;
+  padding-right: $grid-size-half;
 }
 
 .list-reset {
@@ -165,7 +166,7 @@ a {
 .page-body {}
 
 .page-footer {
-  margin-top: $grid-size * 3;
+  margin-top: $grid-size * 4;
   padding: $grid-size-double 0;
   background-color: $brand-color-secondary-light;
   border-top: 1px solid $brand-color-secondary;
@@ -363,9 +364,12 @@ a {
 .post-datetime {}
 
 .post-hero {
-  width: $image-width;
+  width: 100%;
+  max-width: $image-width;
   margin-top: $grid-size;
   margin-bottom: $grid-size-double;
+  padding-left: $grid-size-half;
+  padding-right: $grid-size-half;
   font-size: 0;
 }
 
@@ -475,3 +479,75 @@ a {
 // RESPONSIVE
 // ==================================================
 @media only screen and (max-width: $responsive-max-page-width) {}
+
+@media only screen and (max-width: 768px) {
+  #mce-EMAIL {
+    border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+    border-right: 1px solid #abb0b2 !important;
+  }
+
+  #mc-embedded-subscribe {
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+  }
+
+  .post-item {
+    width: 50%;
+    padding-bottom: 26%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 16px;
+  }
+
+  .page-nav-list {
+    padding-left: $grid-size-half;
+    padding-right: $grid-size-half;
+  }
+
+  .page-nav-item {
+    padding-left: $grid-size;
+    padding-right: $grid-size;
+  }
+
+  .page-footer {
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .about-footer {
+    text-align: center;
+
+    .float-l {
+      float: none;
+    }
+
+    .headshot {
+      margin-bottom: $grid-size-half;
+      margin-right: 0;
+      display: inline-block;
+    }
+  }
+
+  .post-hero {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .post-body {
+    blockquote {
+      padding-left: $grid-size;
+      padding-right: $grid-size;
+      font-size: 1rem;
+    }
+  }
+
+  .post-item {
+    width: 100%;
+    padding-bottom: 60%;
+  }
+}
