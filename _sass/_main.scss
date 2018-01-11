@@ -21,6 +21,9 @@ $light-gray: #808080;
 $extra-light-gray: #c0c0c0;
 $background-color: #fff;
 $brand-color: #df4633;
+$brand-color-light: #f16b5b;
+$brand-color-secondary: #f4cca8;
+$brand-color-secondary-light: #fff7ef;
 $text-color: $black;
 $link-color: $black;
 
@@ -152,7 +155,7 @@ a {
 // ==================================================
 .page-content {
   border-top: 3px solid $brand-color;
-  padding: ($grid-size * 3) 0;
+  padding: ($grid-size * 3) 0 0;
 }
 
 .page-header {
@@ -161,7 +164,21 @@ a {
 
 .page-body {}
 
-.page-footer {}
+.page-footer {
+  margin-top: $grid-size * 3;
+  padding: $grid-size-double 0;
+  background-color: $brand-color-secondary-light;
+  border-top: 1px solid $brand-color-secondary;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    margin: $grid-size-half 0;
+    line-height: 1.3;
+  }
+}
 
 .page-logo {
   width: $logo-width;
@@ -235,6 +252,41 @@ a {
     &:focus {
       text-decoration: underline;
     }
+  }
+}
+
+#mc_embed_signup {
+  input {
+    font-family: $font-family !important;
+    font-size: 1rem !important;
+  }
+}
+
+#mc_embed_signup_scroll {
+  font-size: 0;
+}
+
+#mce-EMAIL,
+#mc-embedded-subscribe {
+  height: 46px !important;
+}
+
+#mce-EMAIL {
+  padding: 0 $grid-size-half !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-right: 0 !important;
+}
+
+#mc-embedded-subscribe {
+  padding: 0 $grid-size !important;
+  background-color: $brand-color !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+
+  &:hover,
+  &:focus {
+    background-color: $brand-color-light !important;
   }
 }
 

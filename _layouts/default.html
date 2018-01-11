@@ -16,6 +16,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.png" | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <link rel="stylesheet" href="https://use.typekit.net/{{ site.typekit }}.css">
+  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="{{ "/css/app.css" | relative_url }}">
 </head>
 <body>
@@ -25,7 +26,7 @@
       <nav class="page-nav text-center">
         <ul class="page-nav-list list-reset">
           <li class="page-nav-item"><a href="/about">About</a></li>
-          <!-- <li class="page-nav-item"><a href="#">Subscribe</a></li> -->
+          <li class="page-nav-item"><a href="#subscribe-form">Subscribe</a></li>
           <li class="page-nav-item"><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a></li>
         </ul>
       </nav>
@@ -33,7 +34,21 @@
     <main class="page-body underline-link">
       {{ content }}
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer text-center">
+      <section id="subscribe-form" class="is-max-content-width">
+        <h3>Sign up for the mailing list</h3>
+        <p>Get the latest and greatest in Cinepocalypse reviews. You won't be spammed and will never receive more than one email a week.</p>
+        <div id="mc_embed_signup">
+          <form action="https://ianhirschfeld.us15.list-manage.com/subscribe/post?u=b4adb0ee562987d6ec41c0582&amp;id=d40374a63f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b4adb0ee562987d6ec41c0582_d40374a63f" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+          </form>
+        </div>
+      </section>
     </footer>
   </div>
   {% if site.google_analytics %}
