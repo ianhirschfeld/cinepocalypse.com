@@ -4,3 +4,4 @@ Everything needed to operate http://www.cinepocalypse.com. Film reviews by [Ian 
 
 #### TODO:
 - [ ] Add filter/search to home page.
+- [ ] Add tag pages and shows tags on posts.

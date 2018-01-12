@@ -4,6 +4,10 @@ title:  "Interstellar"
 subtitle: "Epic space cinematography, a beautiful score, theoretical physics, and emotions, so many emotions."
 image: /images/interstellar/Interstellar.jpg
 image_credit: "Flash Wallpapers"
+spoilers: true
+tags:
+  - sci-fi
+  - christopher-nolan
 ---
 ## What I Wanted
 
