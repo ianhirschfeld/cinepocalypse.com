@@ -3,6 +3,7 @@ layout: post
 title:  "2016 Summer Roundup"
 subtitle: "The good, the bad, and the ugly of the big screen this past summer."
 image: /images/2016summerroundup/2016SummerRoundup.jpg
+spoilers: false
 tags:
   - spoiler-free
   - roundup
