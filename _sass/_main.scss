@@ -14,6 +14,8 @@ $font-family-rift: 'rift-soft', Helvetica, sans-serif;
 $font-family: $font-family-freight;
 $font-family-headers: $font-family-rift;
 
+$line-height: 1.4;
+
 $black: #414141;
 $gray: #606060;
 $light-gray: #808080;
@@ -178,7 +180,7 @@ a {
 
   p {
     margin: $grid-size-half 0;
-    line-height: 1.3;
+    line-height: $line-height;
   }
 }
 
@@ -321,7 +323,7 @@ a {
 
   p {
     margin-top: $grid-size;
-    line-height: 1.3;
+    line-height: $line-height;
 
     &:first-child {
       margin-top: 0;
@@ -332,7 +334,7 @@ a {
   ol {
     margin: $grid-size 0;
     padding: 0 0 0 $grid-size;
-    line-height: 1.3;
+    line-height: $line-height;
 
     li {
       margin-top: $grid-size-half;
@@ -359,7 +361,7 @@ a {
 .post-subtitle {
   padding: $grid-size-half 0;
   font-size: 1.2rem;
-  line-height: 1.3;
+  line-height: $line-height;
 }
 
 .post-datetime {}
@@ -473,7 +475,7 @@ a {
 .post-item-subtitle {
   margin-top: 5px;
   font-size: 0.888rem;
-  line-height: 1.3;
+  line-height: $line-height;
 }
 
 .spoilers-warning {
@@ -481,7 +483,7 @@ a {
   background-color: $super-extra-light-gray;
   font-weight: bold;
   white-space: pre-wrap;
-  line-height: 1.3;
+  line-height: $line-height;
 }
 
 // ==================================================
