@@ -17,11 +17,12 @@ $font-family-headers: $font-family-rift;
 $line-height: 1.4;
 
 $black: #414141;
+$white: #fff;
 $gray: #606060;
 $light-gray: #808080;
 $extra-light-gray: #c0c0c0;
 $super-extra-light-gray: #f2f2f2;
-$background-color: #fff;
+$background-color: $white;
 $brand-color: #df4633;
 $brand-color-light: #f16b5b;
 $brand-color-secondary: #f4cca8;
@@ -221,6 +222,29 @@ a {
   padding: 0;
   border: none;
   border-top: 1px solid $extra-light-gray;
+}
+
+
+.spoilers-container {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: $grid-size-half;
+  z-index: 3;
+  background: $brand-color;
+  border-radius: 30px;
+}
+
+.spoilers-icon {
+  width: 18px;
+  position: absolute;
+  top: 5px;
+  left: 6px;
+
+  path {
+    fill: $white;
+  }
 }
 
 .about-footer {
@@ -465,7 +489,7 @@ a {
 
 .post-item-title,
 .post-item-subtitle {
-  color: #fff;
+  color: $white;
 }
 
 .post-item-title {

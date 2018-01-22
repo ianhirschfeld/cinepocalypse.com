@@ -11,6 +11,9 @@ layout: default
         <h2 class="post-item-title">{{ post.title }}</h2>
         <p class="post-item-subtitle">{{ post.subtitle }}</p>
       </div>
+      {% if post.spoilers %}
+      <div class="spoilers-container" title="Spoilers"><div class="spoilers-icon">{% include warning.svg %}</div></div>
+      {% endif %}
     </a>
   </li>
   {% endfor %}
