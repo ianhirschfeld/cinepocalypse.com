@@ -58,7 +58,7 @@ Having been happy with how BvS came out, I was looking forward to *Suicide Squad
 
 *Resurgence* is an exercise in “nostalgia can only take you so far”.
 
-<hr class="divider" />
+---
 
 Although I saw about one movie a week, I still missed several over the course of the summer. Here are three that are definitely on my radar to watch soon:
 
