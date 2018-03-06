@@ -374,6 +374,27 @@ a {
     border: none;
     border-top: 1px solid $extra-light-gray;
   }
+
+  table {
+    width: 100%;
+    border: 1px solid $extra-light-gray;
+    table-layout: fixed;
+
+    thead {
+      text-align: left;
+      border-bottom: 1px solid $extra-light-gray;
+      background-color: $super-extra-light-gray;
+    }
+
+    th,
+    td {
+      padding: 5px $grid-size-half;
+
+      &:first-child {
+        border-right: 1px solid $extra-light-gray;
+      }
+    }
+  }
 }
 
 .post-title {
@@ -402,6 +423,18 @@ a {
   margin-top: $grid-size * 1.5;
   margin-bottom: $grid-size * 1.5;
   font-size: 0;
+
+  &.is-portrait {
+    max-width: 300px;
+  }
+
+  &.float-l {
+    margin-right: $grid-size * 1.5;
+  }
+
+  &.float-r {
+    margin-left: $grid-size * 1.5;
+  }
 }
 
 .post-image {

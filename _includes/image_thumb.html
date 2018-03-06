@@ -1,7 +1,8 @@
 {% assign url = include.url %}
 {% assign alt = include.alt %}
 {% assign credit = include.credit %}
-<div class="post-image-container">
+{% assign classes = include.classes %}
+<div class="post-image-container {{ classes }}">
   <img class="post-image" src="{{ url }}" alt="{{ alt }} Thumb" />
   {% if credit %}
   <span class="post-image-credit is-light-gray">Image: {{ credit}}</span>
