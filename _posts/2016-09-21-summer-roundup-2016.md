@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "2016 Summer Roundup"
+title:  "Summer Roundup 2016"
 subtitle: "The good, the bad, and the ugly of the big screen this past summer."
-image: /images/2016summerroundup/2016SummerRoundup.jpg
+image: /images/summerroundup2016/SummerRoundup2016.jpg
 spoilers: false
 tags:
   - spoiler-free

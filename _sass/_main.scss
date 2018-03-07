@@ -377,6 +377,7 @@ a {
 
   table {
     width: 100%;
+    margin-top: $grid-size;
     border: 1px solid $extra-light-gray;
     table-layout: fixed;
 
@@ -561,6 +562,19 @@ a {
   .post-item {
     width: 50%;
     padding-bottom: 26%;
+  }
+
+  .post-image-container {
+    &.float-l,
+    &.float-r {
+      float: none;
+    }
+
+    &.float-l,
+    &.float-r {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
