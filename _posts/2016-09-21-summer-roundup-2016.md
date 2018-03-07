@@ -5,8 +5,8 @@ subtitle: "The good, the bad, and the ugly of the big screen this past summer."
 image: /images/summerroundup2016/SummerRoundup2016.jpg
 spoilers: false
 tags:
-  - spoiler-free
   - roundup
+  - spoiler-free
 ---
 Now that fall is approaching, I took a look back at all the movies I’ve watched since May. Ranked from the best film to the worst, check out my (super) brief reviews below:
 
