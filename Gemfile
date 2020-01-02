@@ -5,3 +5,4 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', '~> 1.0'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'faraday', '~> 0.17.3'
