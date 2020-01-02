@@ -1,7 +1,7 @@
 title: Cinepocalypse
 description: "Film reviews by Ian Hirschfeld."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.cinepocalypse.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.cinepocalypse.com" # the base hostname & protocol for your site, e.g. http://example.com
 email: ian@cinepocalypse.com
 twitter_username: cinepocalypse_
 personal_twitter_username: ianhirschfeld
