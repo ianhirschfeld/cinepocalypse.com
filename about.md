@@ -12,7 +12,6 @@ I focus on a movie’s purpose and themes because otherwise, our standard measur
 I’m always interested in hearing your thoughts too. Feel free to reach out to me whenever. Thank you, and enjoy!
 
 <footer class="about-footer clearfix">
-  <div class="headshot text-overflow float-l">Ian Hirschfeld</div>
   <ul class="about-list list-reset float-l">
     <li class="about-item"><strong>Ian Hirschfeld</strong></li>
     <li class="about-item">Email: <a href="mailto:{{ site.email }}" target="_blank">{{ site.email }}</a></li>

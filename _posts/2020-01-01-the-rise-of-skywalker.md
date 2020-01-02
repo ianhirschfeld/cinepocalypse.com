@@ -18,7 +18,7 @@ Coming out of the film, I was conflicted by two thoughts:
 1. That was really fun to watch! There were definitely some moments I loved.
 2. Ugh, the main plot points were a huge disappointment.
 
-That is to say, _The Rise of Skywalker_ was a fun non-stop ride to the end of the saga, but thematically I felt it was pretty weak. At least weak, where I personally wanted it to be strongest. So let me break down three of the major plots, one I mostly liked, and two I didn’t.
+That is to say, _The Rise of Skywalker_ was a fun non-stop ride to the end of the saga, but thematically I felt it was pretty weak. At least weak where I personally wanted it to be strongest. So let me break down three of the major plots, one I mostly liked, and two I didn’t.
 
 ## Ben Solo’s redemption
 This film had to wrap up Ben Solo / Kylo Ren tug-of-war, it was just a matter of how. Will Ben realize the error of his ways and join the light side? Will he sacrifice himself in a moment of clarity and disown the dark side? Or will he just double down on the dark side and be an end game boss? Turns out, a little of the first two. Ben’s character arc naturally comes to the conclusion that deep down he has light in him, and he just had to forgive himself.
