@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Ted Lasso - Season 2 Episode 1"
+title: "Ted Lasso - Season 2 Episode 1: Goodbye Early"
 subtitle: "The Setup"
 image: /images/tedlasso/TedLasso_S2E1.jpg
 image_credit: "Apple TV+"
 spoilers: true
+is_episode: true
 tags:
   - ted-lasso
 ---
